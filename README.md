@@ -1,13 +1,47 @@
-# My Smart Home Journey
+# Smart Home
 
-Smart home journey
+## Main Hardware Setup
 
-## Buying List
+| Type of Hardware      | Link                                                                                               |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
+| Home Assistant Server | Raspberry Pi 5 8GB                                                                                 |
+| Zigbee Coordinator    | [SMLIGHT slzb-06p7](https://smartlight.me/smart-home-devices/zigbee-devices/coordinator-slzb-06p7) |
+| Camera                | Reolink Argus 3 Ultra                                                                              |
+| Camera Hub            | Reolink Home HUB                                                                                   |
+| 2 Yale Doorman        |                                                                                                    |
 
-### Zigbee Coordinator
+### Sensors/Switches/Relays
 
-- [SMLIGHT slzb-06p7](https://smartlight.me/smart-home-devices/zigbee-devices/coordinator-slzb-06p7)
+| Status | Sensor               | Product         | Amount | Brand       | Link |
+| ------ | -------------------- | --------------- | ------ | ----------- | ---- |
+| ✅     | Motion               |                 | 3      | Philips Hue |      |
+| 🛒     | Magnetic Sensors     |                 | -      | Sonoff      |      |
+| 🛒     | Prescence Sensors    |                 | -      | ?           |      |
+| 🛒     | Water Leakage        |                 | -      | ?           |      |
+| 🛒     | Temperature/Humidity |                 | -      | ?           |      |
+| 🛒     | Smoke/Fire           |                 | -      | ?           |      |
+| 🛒     | Plug Switches        | Ikea Inspelning | -      | Ikea        |      |
 
-### Cameras
+## Software
 
-- Reolink [Reolink Package](https://www.kjell.com/se/varumarken/reolink/sakerhet-overvakning/kameraovervakning/overvakningskameror/overvakningskameror-utomhus/reolink-home-hub-med-2x-argus-3-ultra-4k-kamera-p60367)
+### Home Assistant
+
+#### Zigbee2MQTT
+
+The system uses Zigbee2MQTT within Home assistant...
+
+#### HACS
+
+These are my currently installed HACS
+
+| HACS              | Link                                                 |
+| ----------------- | ---------------------------------------------------- |
+| Bubble Card       | https://github.com/Clooos/Bubble-Card                |
+| button-card       | https://github.com/custom-cards/button-card          |
+| Alarmo            | https://github.com/nielsfaber/alarmo                 |
+| card-mod          | https://github.com/thomasloven/lovelace-card-mod     |
+| Kiosk Mode        | https://github.com/NemesisRE/kiosk-mode              |
+| Auto Backup       | https://github.com/jcwillox/hass-auto-backup         |
+| Navbar Card       | https://github.com/joseluis9595/lovelace-navbar-card |
+| Simple Swipe Card | https://github.com/nutteloost/simple-swipe-card      |
+| Lucide Icons      | https://github.com/karlis-vagalis/hass-lucide-icons  |
