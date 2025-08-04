@@ -1,0 +1,57 @@
+screen_header_template:
+  show_icon: false
+  show_name: false
+  show_state: false
+  variables:
+    header: Header
+    subtitle:
+  tap_action:
+    action: none
+  styles:
+    card:
+      - background: >-
+          linear-gradient(0deg,rgba(17, 17, 17, 0.72) 0%, rgba(17, 17, 17,
+          0.72) 70%, rgba(17,17,17,1) 100%)
+      - border: none
+      - border-radius: 0
+      - box-shadow: none
+      - padding: 12px 24px 12px 24px
+      - height: auto
+      - position: fixed
+      - width: 100%
+      - top: 0
+      - left: 0
+      - z-index: 1
+      - backdrop-filter: blur(10px)
+    grid:
+      - grid-template-areas: '"header" "subtitle"'
+      - grid-template-rows: auto auto
+      - justify-items: start
+      - align-items: start
+      - gap: 0px
+  custom_fields:
+    header: |
+      [[[
+        return `<div style="
+          font-size: 32px;
+          font-weight: 700;
+          color: var(--primary-text-color);
+          text-align: left;
+          margin: 0;
+          line-height: 1.2;
+        ">${variables.header}</div>`;
+      ]]]
+    subtitle: |
+      [[[
+        if (!variables.subtitle) return '';
+
+        return `<div style="
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--secondary-text-color);
+          text-align: left;
+          margin: 0;
+          line-height: 1.4;
+          opacity: 0.8;
+        ">${variables.subtitle}</div>`;
+      ]]]

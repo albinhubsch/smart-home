@@ -1,0 +1,67 @@
+simple_entity_card:
+  variables:
+    show_secondary_info: true
+    secondary_info_attribute: ""
+    secondary_info_unit: ""
+    icon_color: white
+  show_state: false
+  show_icon: true
+  styles:
+    card:
+      - background: transparent
+      - border: none
+      - box-shadow: none
+      - padding: 10px 15px
+    grid:
+      - grid-template-areas: '"i n" "i info"'
+      - grid-template-columns: auto 1fr
+      - grid-template-rows: auto auto
+      - column-gap: 8px
+      - align-items: center
+    icon:
+      - width: 26px
+      - height: 26px
+      - color: "[[[ return variables.icon_color; ]]]"
+      - grid-area: i
+    name:
+      - font-size: 12px
+      - font-weight: 500
+      - color: var(--secondary-text-color)
+      - text-align: left
+      - margin: 0
+      - grid-area: "n"
+      - width: 100%
+      - align-self: start
+    custom_fields:
+      info:
+        - font-size: 14px
+        - font-weight: 800
+        - color: var(--primary-text-color)
+        - text-align: left
+        - grid-area: info
+        - align-self: start
+        - display: "[[[ return variables.show_secondary_info ? 'block' : 'none'; ]]]"
+  custom_fields:
+    info: |
+      [[[
+        if (!variables.show_secondary_info) return '';
+        if (!entity) return '';
+        
+        let value = '';
+        
+        // If specific attribute is requested, use that
+        if (variables.secondary_info_attribute && entity.attributes[variables.secondary_info_attribute] !== undefined) {
+          value = entity.attributes[variables.secondary_info_attribute];
+        }
+        // Otherwise use entity state
+        else {
+          value = entity.state;
+        }
+        
+        // Add unit if specified
+        if (value !== undefined && value !== null && variables.secondary_info_unit) {
+          return value + variables.secondary_info_unit;
+        }
+        
+        return value || '';
+      ]]]
