@@ -32,7 +32,7 @@ The system uses Zigbee2MQTT within Home assistant...
 
 #### HACS
 
-These are my currently installed HACS
+Currently installed HACS
 
 | HACS              | Link                                                 |
 | ----------------- | ---------------------------------------------------- |
