@@ -1,5 +1,7 @@
 # Smart Home
 
+Very much in a state of planning and work in progress.
+
 ## Main Hardware Setup
 
 | Type of Hardware      | Link                                                                                               |
