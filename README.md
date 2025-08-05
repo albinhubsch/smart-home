@@ -32,6 +32,18 @@ Very much in a state of planning and work in progress.
 
 The system uses Zigbee2MQTT within Home assistant...
 
+#### Integrations
+
+| Integration | Link |
+| ----------- | ---- |
+| Alarmo      |      |
+| MQTT        |      |
+| Proximity   |      |
+| Reolink     |      |
+| SMHI        |      |
+| Roborock    |      |
+| Sonos       |      |
+
 #### HACS
 
 Currently installed HACS
