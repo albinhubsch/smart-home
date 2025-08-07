@@ -14,15 +14,16 @@ Very much in a state of planning and work in progress.
 
 ### Sensors/Switches/Relays
 
-| Status | Sensor               | Product         | Amount | Brand       | Link |
-| ------ | -------------------- | --------------- | ------ | ----------- | ---- |
-| ✅     | Motion               |                 | 3      | Philips Hue |      |
-| 🛒     | Magnetic Sensors     |                 | -      | Sonoff      |      |
-| 🛒     | Prescence Sensors    |                 | -      | ?           |      |
-| 🛒     | Water Leakage        |                 | -      | ?           |      |
-| 🛒     | Temperature/Humidity |                 | -      | ?           |      |
-| 🛒     | Smoke/Fire           |                 | -      | ?           |      |
-| 🛒     | Plug Switches        | Ikea Inspelning | -      | Ikea        |      |
+| Status | Sensor               | Product         | Amount | Brand       | Link                                                                                                |
+| ------ | -------------------- | --------------- | ------ | ----------- | --------------------------------------------------------------------------------------------------- |
+| ✅     | Motion               |                 | 3      | Philips Hue |                                                                                                     |
+| 🛒     | Magnetic Sensors     |                 | -      | Sonoff      |                                                                                                     |
+| 🛒     | Prescence Sensors    |                 | -      | ?           |                                                                                                     |
+| 🛒     | Water Leakage        |                 | -      | ?           |                                                                                                     |
+| 🛒     | Temperature/Humidity |                 | -      | ?           |                                                                                                     |
+| 🛒     | Smoke/Fire           |                 | -      | ?           |                                                                                                     |
+| ✅     | Smart Plug           | Ikea Inspelning | 4      | Ikea        | [Ikea Inspelning](https://www.ikea.com/se/sv/p/inspelning-stickpropp-smart-energimaetare-00569836/) |
+| ✅     | Smart Plug           | Philips Hue     | 3      | Philips     | [Smart Plug](https://www.philips-hue.com/sv-se/p/hue-smart-plug/8719514342309)                      |
 
 ## Software
 
