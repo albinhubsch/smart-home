@@ -1,0 +1,67 @@
+navbar-templates:
+  mobile-navbar:
+    layout:
+      auto_padding:
+        enabled: false
+    routes:
+      - url: /lovelace/home
+        icon: lucide:house
+        label: Home
+      - url: /lovelace/rooms
+        icon: lucide:armchair
+        label: Rooms
+      - url: /lovelace/security
+        icon: lucide:shield
+        label: Security
+      - url: /lovelace/settings
+        icon: lucide:settings-2
+        label: Settings
+      - url: /lovelace/profile
+        icon: lucide:circle-user
+        label: Profile
+    haptic:
+      url: true
+      tap_action: true
+    styles: |
+      .navbar-card {
+        # background-color: #1C1C1C;
+        background-color: rgba(30, 30, 30, 0.72);
+        backdrop-filter: blur(10px);
+        border: none;
+      }
+
+      .route {
+        //
+      }
+
+      .button {
+        background-color: transparent;
+        border-radius: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .button > ha-ripple {
+        display: none;
+      }
+
+      .button.active {
+        #--icon-primary-color: oklch(62.3% 0.214 259.815);
+        --icon-primary-color: rgba(255, 255, 255, 1);
+        background-color: transparent;
+      }
+
+      .navbar-card.mobile {
+        padding-top: 10px;
+        padding-bottom: 32px;
+        padding-left: 22px;
+        padding-right: 22px;
+        border-top: 1px solid rgba(255, 255, 255, 0.03);
+      }
+
+      .navbar-card.desktop {
+        height: 60px;
+        border-radius: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
